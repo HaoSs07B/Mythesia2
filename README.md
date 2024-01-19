@@ -1,4 +1,7 @@
 # tuma2-keynes2-lyricum2
+
+## NOTE
+ If you found bugs please report through discord (to ypincc). This project will be updated weekly // monthly. The next scheduled update will be DX9. Thank you! Please note, none of the opened servers are the owner of the files so feel free to use!
  
 ## WARNING
 THIS PROJECT ARE FOR EDUCATIONAL PURPOSES ONLY!
@@ -24,6 +27,14 @@ service mysql-server start
 
 mysql_secure_installation
 
+cd /tuma2-keynes2-lyricum2/srcs
+
+sh build_distribute.sh
+
+cd /tuma2-keynes2-lyricum2/setup
+
+gmake
+
 mysql
 
 CREATE USER 'mt2!user'@'localhost' IDENTIFIED BY '@mt2!pass';
@@ -45,14 +56,6 @@ GRANT ALL PRIVILEGES ON player.mob_proto TO 'proto'@'%' IDENTIFIED BY 'dev';
 FLUSH PRIVILEGES;
 
 quit
-
-cd /tuma2-keynes2-lyricum2/srcs
-
-sh build_distribute.sh
-
-cd /tuma2-keynes2-lyricum2/setup
-
-gmake
 
 cd /tuma2-keynes2-lyricum2/server
 
