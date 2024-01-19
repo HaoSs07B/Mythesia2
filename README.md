@@ -1,10 +1,4 @@
-# tuma2-keynes2-lyricum2
-
-## NOTE
- If you found bugs please report through discord (to ypincc). This project will be updated weekly // monthly. The next scheduled update will be DX9. Thank you! Please note, none of the opened servers are the owner of the files so feel free to use!
- 
-## WARNING
-THIS PROJECT ARE FOR EDUCATIONAL PURPOSES ONLY!
+# Mythesia2
 
 ## Server: setup
 pkg install git
@@ -15,11 +9,11 @@ pkg install gmake
 
 cd /
 
-git clone https://github.com/yPincc/tuma2-keynes2-lyricum2
+git clone https://github.com/HaoSs07B/Mythesia2
 
 pkg install mariadb105-server-10.5.23
 
-cp /tuma2-keynes2-lyricum2/setup/mariadb/server.cnf /usr/local/etc/mysql/conf.d
+cp /Mythesia2/setup/mariadb/server.cnf /usr/local/etc/mysql/conf.d
 
 sysrc mysql_enable="YES"
 
@@ -27,11 +21,11 @@ service mysql-server start
 
 mysql_secure_installation
 
-cd /tuma2-keynes2-lyricum2/srcs
+cd /Mythesia2/srcs
 
 sh build_distribute.sh
 
-cd /tuma2-keynes2-lyricum2/setup
+cd /Mythesia2/setup
 
 gmake
 
@@ -57,7 +51,7 @@ FLUSH PRIVILEGES;
 
 quit
 
-cd /tuma2-keynes2-lyricum2/server
+cd /Mythesia2/server
 
 sh admin_panel.sh
 
@@ -70,7 +64,7 @@ Run: srcs\create_vs_project.bat
 
 Run: srcs\build_client_distribute.bat
 
-Open: srcs\build\keynes2.sln
+Open: srcs\build\Mythesia2.sln
 
 Set: Distribute
 
